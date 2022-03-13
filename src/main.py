@@ -1,5 +1,3 @@
-from ast import keyword
-from re import L
 from helpers.textblob_helper import translate, LANGUAGES
 from helpers.news_helper import get_news
 
@@ -16,5 +14,9 @@ for lang in LANGUAGES.items():
             news_by_country[news['country']] = ''
 
         news_by_country[news['country']] += f'{news["title"]} {news["description"]}'
+
+
+for country in news_by_country.items():
+    pass
 
 print(news_by_country)

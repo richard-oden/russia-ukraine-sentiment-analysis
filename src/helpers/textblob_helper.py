@@ -1,5 +1,6 @@
 from textblob import TextBlob
 
+# associates Mediastack language code with 
 LANGUAGES = {
     'ar': 'ar', 
     'de': 'de', 
